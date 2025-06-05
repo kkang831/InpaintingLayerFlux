@@ -1,4 +1,4 @@
-py3clean ./ && accelerate launch --config_file accelerate.yaml --gpu_ids 2 train_control_lora_flux_AAA.py \
+py3clean ./ && accelerate launch --config_file accelerate.yaml --gpu_ids 0 train_control_lora_flux_AAA.py \
     --pretrained_model_name_or_path black-forest-labs/FLUX.1-dev \
     --train_data_dir /home/kkang831/dataset/desobav2_full_res \
     --resolution 512 \
