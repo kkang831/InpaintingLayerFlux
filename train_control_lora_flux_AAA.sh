@@ -5,7 +5,6 @@ py3clean ./ && accelerate launch --config_file accelerate.yaml --gpu_ids 0 train
     --guidance_scale 3.5 \
     --learning_rate 3e-5 \
     --train_batch_size 1 \
-    # --max_train_steps 22000 \
     --max_train_steps 10 \
     --rank 1024 \
     --gaussian_init_lora \
@@ -19,6 +18,7 @@ py3clean ./ && accelerate launch --config_file accelerate.yaml --gpu_ids 0 train
     --lr_scheduler cosine_with_restarts \
     --mixed_precision "bf16" \
     --gradient_accumulation_steps 8 \
+    # --max_train_steps 22000 \
     # --train_data_dir /data1/kkang/desobav2_full_res \
     # --num_train_epochs 20 \
     # --pretrained_lora_path /aaaidata/weirunpu/diffusers-0.33.0.dev0/flux_control_lora_RORD/pretrained_model/pytorch_lora_weights.safetensors \
