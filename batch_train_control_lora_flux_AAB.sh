@@ -40,7 +40,7 @@ pyclean ./ && accelerate launch --config_file accelerate.yaml --gpu_ids 0 train_
     --train_data_dir /home/kkang831/dataset/desobav2_full_res \
     --resolution 512 \
     --guidance_scale 3.5 \
-    --learning_rate 3e-5 \
+    --learning_rate 8e-5 \
     --train_batch_size 1 \
     --rank 256 \
     --gaussian_init_lora \
