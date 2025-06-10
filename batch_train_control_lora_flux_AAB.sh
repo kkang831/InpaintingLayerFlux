@@ -1,7 +1,7 @@
 #! /bin/sh
 
-#SBATCH -J train_control_lora_flux_AAA
-#SBATCH -o train_control_lora_flux_AAA_rank_256.out
+#SBATCH -J train_control_lora_flux_AAB
+#SBATCH -o train_control_lora_flux_AAB_rank_256.out
 #SBATCH -t 72:00:00
 
 
